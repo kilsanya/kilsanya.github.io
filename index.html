@@ -16,14 +16,14 @@
 		</div>
 
 		<script>
-			let form = document.getElementById("nameForm");
+			let btn = document.getElementById("nS");
 			let inName = document.getElementById("fName").value;
 
 			function displayName(inName) {
 				document.getElementById("displayName").innerHTML = "Hello, " + inName + "!";
 			}
 
-			form.addEvenetListener("submit", displayName());
+			btn.addEvenetListener("click", displayName());
 			
 		</script>
 	</body>
