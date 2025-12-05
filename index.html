@@ -6,10 +6,25 @@
 		<h1>Joey's website</h1>
 		<img src="https://github.com/kilsanya/kilsanya.github.io/blob/main/stick-figure.gif?raw=true">
 
-		<form>
+		<form id="nameForm">
 			<label for="name">Name: </label>
 			<input type="text" id="fName" name="fullName" required>
 			<input type="submit" id="nS" name="nameSend>
 		</form>
+
+		<div id="displayName">
+		</div>
+
+		<script>
+			let form = document.getElementById("nameForm");
+			let inName = document.getElementById("fName").value;
+
+			function displayName(inName) {
+				document.getElementById("displayName").innerHTML = "Hello, " + inName + "!";
+			}
+
+			displayName();
+			
+		</script>
 	</body>
 </html>
