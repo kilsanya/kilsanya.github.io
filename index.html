@@ -21,7 +21,8 @@
 			let btn = document.getElementById('nS');
 			const dispText = document.getElementById('displayName');
 
-			btn.addEventListener('click', function() {
+			btn.addEventListener('click', function(e) {
+				e.preventDefault();
 				let inName = document.getElementById('fName').value;
 				const newParagraph = createElement("p");
 				newParagraph.textContent = "Hello, " + inName + "!";
