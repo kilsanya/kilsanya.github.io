@@ -19,10 +19,13 @@
 
 		<script>
 			let btn = document.getElementById('nS');
+			const dispText = document.getElementById('displayName');
 			let inName = document.getElementById('fName').value;
+			const newParagraph = createElemtent("p");
+			newParagraph.textContent = "Hello, " + inName + "!";
 
 			btn.addEventListener('click', function {
-				document.getElementById("displayName").innerHTML = "<p>Hello, inName !</p>";
+				dispText.appendChild(newParagraph);
 			});
 			
 			
